@@ -42,7 +42,10 @@
           <form id="signUpForm" action="/sign-up" method="POST">
             <!-- First Name Input -->
             <div class="input-field">
-              <label for="first_name">FIRST NAME</label>
+              <label for="first_name"
+                >FIRST NAME
+                <div style="color: #ff4d4f">*</div></label
+              >
               <input
                 type="text"
                 id="first_name"
@@ -54,7 +57,10 @@
 
             <!-- Last Name Input -->
             <div class="input-field">
-              <label for="last_name">LAST NAME</label>
+              <label for="last_name"
+                >LAST NAME
+                <div style="color: #ff4d4f">*</div></label
+              >
               <input
                 type="text"
                 id="last_name"
@@ -66,7 +72,10 @@
 
             <!-- Email Input -->
             <div class="input-field">
-              <label for="email">EMAIL</label>
+              <label for="email"
+                >EMAIL
+                <div style="color: #ff4d4f">*</div></label
+              >
               <input
                 type="email"
                 id="email"
@@ -78,7 +87,10 @@
 
             <!-- Phone Number Input -->
             <div class="input-field">
-              <label for="phone_number">PHONE NUMBER</label>
+              <label for="phone_number"
+                >PHONE NUMBER
+                <div style="color: #ff4d4f">*</div></label
+              >
               <input
                 type="tel"
                 id="phone_number"
@@ -91,13 +103,19 @@
 
             <!-- Password Input -->
             <div class="input-field">
-              <label for="password">PASSWORD</label>
+              <label for="password"
+                >PASSWORD
+                <div style="color: #ff4d4f">*</div></label
+              >
               <input type="password" id="password" name="password" required />
             </div>
 
             <!-- Confirm Password Input -->
             <div class="input-field">
-              <label for="confirm_password">CONFIRM PASSWORD</label>
+              <label for="confirm_password"
+                >CONFIRM PASSWORD
+                <div style="color: #ff4d4f">*</div></label
+              >
               <input
                 type="password"
                 id="confirm_password"
@@ -118,6 +136,12 @@
           </div>
         </div>
       </div>
+    </div>
+
+    <div id="popup">
+      <h3>Form Submitted!</h3>
+      <div id="popupContent"></div>
+      <button id="closePopup">Close</button>
     </div>
 
     <script src="script.js"></script>

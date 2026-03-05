@@ -31,7 +31,7 @@ body {
 }
 
 .left {
-  flex: 0 0 35%;
+  flex: 0 0 30%;
   min-width: 300px;
   position: relative;
   background-image: url(./images/background-image.png);
@@ -121,6 +121,8 @@ body {
 }
 
 .input-field label {
+  display: flex;
+  gap: 4px;
   font-size: 0.7rem;
   letter-spacing: 1px;
 }
@@ -133,6 +135,11 @@ body {
   max-width: 100%;
   width: 100%;
   box-sizing: border-box;
+}
+
+.input-field input.error {
+  border: 2px solid #ff4d4f;
+  outline: none;
 }
 
 .input-field input:focus {
@@ -168,4 +175,44 @@ body {
 
 .login-text {
   font-size: 14px;
+}
+
+/* Popup container (hidden by default) */
+#popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  background-color: #fff;
+  padding: 30px 40px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  width: 300px;
+  text-align: center;
+  transition:
+    transform 0.3s ease,
+    opacity 0.3s ease;
+  opacity: 0;
+}
+
+/* Popup visible state */
+#popup.show {
+  transform: translate(-50%, -50%) scale(1);
+  opacity: 1;
+}
+
+/* Close button */
+#popup button {
+  margin-top: 15px;
+  padding: 8px 16px;
+  border: none;
+  background-color: #0077ff;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+#popup button:hover {
+  background-color: #005fcc;
 }
