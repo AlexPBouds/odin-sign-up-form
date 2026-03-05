@@ -19,9 +19,8 @@
         </div>
 
         <div class="photo-credit">
-          Photo by&nbsp;
-          <a href="https://unsplash.com/@haliewestphoto">Halie West</a
-          >&nbsp;on&nbsp;
+          Photo by
+          <a href="https://unsplash.com/@haliewestphoto">Halie West</a> on
           <a href="https://unsplash.com/">Unsplash</a>
         </div>
       </div>
@@ -32,8 +31,7 @@
             <div class="intro-text">
               This is not a real online service! You know you need something
               like this in your life to help you realize your deepest dreams.
-              Sign up
-              <i>now</i> to get started.
+              <br />Sign up <i>now</i> to get started.
             </div>
 
             <div class="inspirational-text">You <i>know</i> you want to.</div>
@@ -41,9 +39,9 @@
             <div class="encouragement-text">Let's do this!</div>
           </div>
 
-          <div class="sign-up-container">
-            <form id="signUpForm" action="/sign-up" method="POST">
-              <!-- First Name Input -->
+          <form id="signUpForm" action="/sign-up" method="POST">
+            <!-- First Name Input -->
+            <div class="input-field">
               <label for="first_name">FIRST NAME</label>
               <input
                 type="text"
@@ -52,8 +50,10 @@
                 placeholder="First"
                 required
               />
+            </div>
 
-              <!-- Last Name Input -->
+            <!-- Last Name Input -->
+            <div class="input-field">
               <label for="last_name">LAST NAME</label>
               <input
                 type="text"
@@ -62,8 +62,10 @@
                 placeholder="Last"
                 required
               />
+            </div>
 
-              <!-- Email Input -->
+            <!-- Email Input -->
+            <div class="input-field">
               <label for="email">EMAIL</label>
               <input
                 type="email"
@@ -72,8 +74,10 @@
                 placeholder="example@email.com"
                 required
               />
+            </div>
 
-              <!-- Phone Number Input -->
+            <!-- Phone Number Input -->
+            <div class="input-field">
               <label for="phone_number">PHONE NUMBER</label>
               <input
                 type="tel"
@@ -83,12 +87,16 @@
                 pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
                 autocomplete="tel"
               />
+            </div>
 
-              <!-- Password Input -->
+            <!-- Password Input -->
+            <div class="input-field">
               <label for="password">PASSWORD</label>
               <input type="password" id="password" name="password" required />
+            </div>
 
-              <!-- Confirm Password Input -->
+            <!-- Confirm Password Input -->
+            <div class="input-field">
               <label for="confirm_password">CONFIRM PASSWORD</label>
               <input
                 type="password"
@@ -96,8 +104,8 @@
                 name="confirm_password"
                 required
               />
-            </form>
-          </div>
+            </div>
+          </form>
         </div>
 
         <div class="bottom">
