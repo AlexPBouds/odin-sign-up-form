@@ -57,7 +57,7 @@ form.addEventListener("submit", function (event) {
   popupContent.innerHTML = `
     <p><strong>Name:</strong> ${data.firstName} ${data.lastName}</p>
     <p><strong>Email:</strong> ${data.email}</p>
-    <p><strong>Phone:</strong> ${data.phone || "N/A"}</p>
+    ${data.phone ? `<p><strong>Phone:</strong> ${data.phone || "N/A"}</p>` : ""}
     <p><strong>Password:</strong> ${"*".repeat(data.password.length)}</p>
   `;
 
